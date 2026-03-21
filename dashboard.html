@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gerenciador de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Gerenciador de Tarefas</h2>
+
+<button onclick="logout()">Sair</button>
+
+<div class="input-area">
+  <input type="text" id="inputTarefa" placeholder="Nova tarefa">
+  <button onclick="criarTarefa()">Adicionar</button>
+</div>
+
+<div class="board">
+  <div class="coluna" ondrop="drop(event,'todo')" ondragover="allowDrop(event)">
+    <h3>A Fazer</h3>
+    <div id="todo"></div>
+  </div>
+
+  <div class="coluna" ondrop="drop(event,'progresso')" ondragover="allowDrop(event)">
+    <h3>Em Progresso</h3>
+    <div id="progresso"></div>
+  </div>
+
+  <div class="coluna" ondrop="drop(event,'feito')" ondragover="allowDrop(event)">
+    <h3>Concluído</h3>
+    <div id="feito"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

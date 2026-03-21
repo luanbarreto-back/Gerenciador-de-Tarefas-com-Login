@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f0f0f;
+  color: #fff;
+  font-family: Arial;
+  text-align: center;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+  background: #1e1e1e;
+  color: white;
+  border: none;
+}
+
+.board {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+}
+
+.coluna {
+  flex: 1;
+  background: #1a1a1a;
+  padding: 10px;
+}
+
+.card {
+  background: #ffffff;
+  color: #000;
+  padding: 10px;
+  margin: 10px 0;
+  cursor: grab;
+}
